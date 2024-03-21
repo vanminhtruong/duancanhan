@@ -115,7 +115,7 @@
                     // Thực hiện các bước tiếp theo nếu cần
                     if (response.trim() === "success") {
                         alert("Sing Up successfully");
-                        window.location.href = "http://localhost/jquery/java/login/index.php";
+                        window.location.href = "http://localhost/login/index.php";
                     }else if(response.trim()==="duplicate"){
                         alert("Tài khoản user hoặc email đã tồn tại");
                     } 
