@@ -8,7 +8,7 @@ $(document).ready(function() {
     showData();
 
     $('#card').click(function() {
-        window.location.href = "http://localhost:8081/home/thethuvien/card.html";
+        window.location.href = "http://localhost:8081/QuanLyThuVien/home/thethuvien/card.html";
     })
 
     function showData() {
@@ -53,7 +53,7 @@ $(document).ready(function() {
         var ngaymuon = row.find("td:nth-child(7)").text();
         var ngaytra = row.find("td:nth-child(8)").text();
         var trangthai = row.find("td:nth-child(4)").text();
-        window.location.href = 'http://localhost:8081/home/bienban/vipham.php?masv=' + masv + '&masach=' + masach + '&ngaymuon=' + ngaymuon + '&ngaytra=' + ngaytra +'&trangthai='+trangthai;
+        window.location.href = 'http://localhost:8081/QuanLyThuVien/home/bienban/vipham.php?masv=' + masv + '&masach=' + masach + '&ngaymuon=' + ngaymuon + '&ngaytra=' + ngaytra +'&trangthai='+trangthai;
     })
 
     loadSearchOptions();
@@ -123,6 +123,6 @@ $(document).ready(function() {
 function checkLogin(){
     if (localStorage.getItem('isLogin') !== 'true') {
         alert("You need to login first");
-        window.location.href = 'http://localhost:8081/home/home/index.php'; // Chuyển hướng về trang card.html
+        window.location.href = 'http://localhost:8081/QuanLyThuVien/home/home/index.php'; // Chuyển hướng về trang card.html
     }
 }

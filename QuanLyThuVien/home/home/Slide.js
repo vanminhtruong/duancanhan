@@ -18,18 +18,18 @@ class Slide {
         
             function redirectToLogin() {
                 // Chuyển hướng đến trang login.html
-                window.location.href = "http://localhost:8081/login/";
+                window.location.href = "http://localhost:8081/QuanLyThuVien/login/";
                 // console.log("hello world")
             }
         
             function logout() {
                 $.ajax({
-                    url: "http://localhost:8081/login/logout.php", // Tạo một file logout.php để xử lý đăng xuất
+                    url: "http://localhost:8081/QuanLyThuVien/login/logout.php", // Tạo một file logout.php để xử lý đăng xuất
                     method: "POST",
                     success: function() {
                         // Chuyển hướng sau khi đăng xuất
                         alert("Đăng xuất thành công");
-                        window.location.href = "http://localhost:8081/home/home/";
+                        window.location.href = "http://localhost:8081/QuanLyThuVien/home/home/";
                         localStorage.removeItem("validatedCard");
                         localStorage.removeItem("isLogin");
                         

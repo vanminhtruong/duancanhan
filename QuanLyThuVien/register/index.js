@@ -42,7 +42,7 @@ function isValidEmail(email) {
                     // Thực hiện các bước tiếp theo nếu cần
                     if (response.trim() === "success") {
                         alert("Sing Up successfully");
-                        window.location.href = "http://localhost:8081/login";
+                        window.location.href = "http://localhost:8081/QuanLyThuVien/login";
                     }else if(response.trim()==="duplicate"){
                         alert("Tài khoản user hoặc email đã tồn tại");
                     } 

@@ -62,7 +62,7 @@ $(document).ready(function(){
                     console.log(data);
                     if(data.success){
                         alert('Đăng ký thành công!');
-                        window.location.href = "http://localhost:8081/home/docgia/docgia.html";
+                        window.location.href = "http://localhost:8081/QuanLyThuVien/home/docgia/docgia.html";
                     } else {
                         alert(data.message);
                     }

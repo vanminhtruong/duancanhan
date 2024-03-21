@@ -11,7 +11,7 @@ class TheThuVien {
     // hàm gọi api xử lý hiển thị dữ liệu từ database
     static loadData(){
         $.ajax({
-            url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCaoThe.php?action=getData',
+            url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCaoThe.php?action=getData',
             type: 'GET',
             dataType: 'json',
             success: function(response) {
@@ -46,7 +46,7 @@ class TheThuVien {
     // api xử lý tính số lượng sinh viên làm thẻ thư Viện
     static sumTheThuVien(){
         $.ajax({
-            url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCaoThe.php?action=sumMathe',
+            url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCaoThe.php?action=sumMathe',
             type: 'GET',
             dataType: 'json',
             success: function(response) {

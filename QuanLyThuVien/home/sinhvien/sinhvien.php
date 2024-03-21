@@ -228,7 +228,7 @@
     function checkLogin() {
         if (localStorage.getItem('isLogin') !== 'true') {
             alert("You need to login first");
-            window.location.href = 'http://localhost:8081/home/home/index.php'; // Chuyển hướng về trang card.html
+            window.location.href = 'http://localhost:8081/QuanLyThuVien/home/home/index.php'; // Chuyển hướng về trang card.html
         }
     }
 
@@ -456,7 +456,7 @@
     //     // Gọi API để xóa sinh viên
     //     $.ajax({
     //         type: "DELETE",
-    //         url: "http://localhost:8081/home/sinhvien/crudSinhvien.php?masv=" + masv,
+    //         url: "http://localhost:8081/QuanLyThuVien/home/sinhvien/crudSinhvien.php?masv=" + masv,
     //         success: function(response) {
     //             // console.log("res: "+JSON.stringify(response));
     //             // // Sau khi xóa thành công, hiển thị lại danh sách sinh viên

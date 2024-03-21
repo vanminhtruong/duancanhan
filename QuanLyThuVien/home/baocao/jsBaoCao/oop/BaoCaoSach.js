@@ -1,7 +1,7 @@
 class Sach {
     static showSachChuaMuon(){
         $.ajax({
-            url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCaoChuaMuon.php',
+            url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCaoChuaMuon.php',
             method: 'GET',
             success: function(response){
                 // Nếu thành công, thêm dữ liệu vào bảng

@@ -442,7 +442,7 @@
     function checkLogin() {
         // if (localStorage.getItem('isLogin') !== 'true') {
         //     alert('Bạn cần phải đăng nhập trước');
-        //     window.location.href = 'http://localhost:8081//home/home/index.php'; // Chuyển hướng về trang card.html
+        //     window.location.href = 'http://localhost:8081/QuanLyThuVien//home/home/index.php'; // Chuyển hướng về trang card.html
         // }
         return localStorage.getItem('isLogin') === 'true';
     }
@@ -453,10 +453,10 @@
         loadSearchOptions();
         if (checkLogin() === false) {
             alert("You need to login first");
-            window.location.href = 'http://localhost:8081/home/home/index.php';
+            window.location.href = 'http://localhost:8081/QuanLyThuVien/home/home/index.php';
         } else if (localStorage.getItem('validatedCard') !== 'true') {
             alert('You need check libary card');
-            window.location.href = 'http://localhost:8081/home/kiemtrathe/check.html'; // Chuyển hướng về trang card.html
+            window.location.href = 'http://localhost:8081/QuanLyThuVien/home/kiemtrathe/check.html'; // Chuyển hướng về trang card.html
         }
     });
 </script>

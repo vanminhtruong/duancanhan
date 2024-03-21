@@ -2,7 +2,7 @@ class ViPham {
     static showViPham(){
         $(document).ready(function(){
             $.ajax({
-                url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCaoViPham.php',
+                url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCaoViPham.php',
                 type: 'GET',
                 dataType: 'json',
                 success: function(response){
@@ -33,7 +33,7 @@ class ViPham {
 
     static countMaPhieuMuon(){
         $.ajax({
-            url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCaoViPham.php?action=count',
+            url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCaoViPham.php?action=count',
             type: 'GET',
             dataType: 'json',
             success: function(response){

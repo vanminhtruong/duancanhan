@@ -46,7 +46,7 @@ $(document).ready(function(){
                         alert("Thẻ thư viện không trùng khớp");
                     } else {
                         alert("Thẻ thư viện trùng khớp");
-                        window.location.href = "http://localhost:8081/home/muontra/muontra.php";
+                        window.location.href = "http://localhost:8081/QuanLyThuVien/home/muontra/muontra.php";
                         localStorage.setItem('validatedCard', 'true');
                         setTimeout(function() {
                             localStorage.removeItem('validatedCard','false');

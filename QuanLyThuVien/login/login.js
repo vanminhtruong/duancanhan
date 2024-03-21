@@ -44,7 +44,7 @@
                                 localStorage.removeItem("savedPassword");
                                 localStorage.removeItem("rememberMe", false);
                             }
-                            window.location.href = "http://localhost:8081/home/home/";
+                            window.location.href = "http://localhost:8081/QuanLyThuVien/home/home/";
                         } else {
                             // $(".box").effect("shake", { distance: 5 });
                             alert("Login failed. Please check your username and password.");

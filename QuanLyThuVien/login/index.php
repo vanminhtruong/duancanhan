@@ -51,7 +51,7 @@
                         </tr>
                     </table>
                 </form>
-                <a href="http://localhost:8081/register/">Bạn chưa có tài khoản đăng ký ngay</a>
+                <a href="http://localhost:8081/QuanLyThuVien/register/">Bạn chưa có tài khoản đăng ký ngay</a>
             </div>
         </div>
     </div>

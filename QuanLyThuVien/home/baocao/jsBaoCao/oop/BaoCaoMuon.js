@@ -1,7 +1,7 @@
 class MuonTra{
     static showMuonTra(){
         $.ajax({
-            url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCao.php',
+            url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCao.php',
             method: 'GET',
             success: function(response){
                 // Nếu thành công, thêm dữ liệu vào bảng
@@ -50,7 +50,7 @@ class MuonTra{
         $(document).ready(function(){
             // Gọi API để lấy dữ liệu từ PHP
             $.ajax({
-                url: 'http://localhost:8081/home/baocao/CRUD/crudBaoCao.php',
+                url: 'http://localhost:8081/QuanLyThuVien/home/baocao/CRUD/crudBaoCao.php',
                 method: 'GET',
                 success: function(response){
                     // Nếu thành công, thêm dữ liệu vào bảng

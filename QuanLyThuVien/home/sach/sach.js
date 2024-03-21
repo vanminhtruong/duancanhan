@@ -28,7 +28,7 @@ function themSach() {
         formData += "&action=add";
         $.ajax({
             type: "POST",
-            url: "http://localhost:8081/home/sach/crudSach.php",
+            url: "http://localhost:8081/QuanLyThuVien/home/sach/crudSach.php",
             data: formData,
             success: function (response) {
                 if (response.trim() === "Thêm sách thành công") {
@@ -126,6 +126,6 @@ function xoaSach(masach) {
 function checkLogin() {
     if (localStorage.getItem('isLogin') !== 'true') {
         alert('Bạn cần phải đăng nhập trước');
-        window.location.href = 'http://localhost:8081/home/home/index.php'; // Chuyển hướng về trang card.html
+        window.location.href = 'http://localhost:8081/QuanLyThuVien/home/home/index.php'; // Chuyển hướng về trang card.html
     }
 }
