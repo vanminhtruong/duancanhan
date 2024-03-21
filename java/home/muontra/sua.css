@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.box-menu {
+    background-color: red;
+    position: relative;
+    padding: 10px;
+}
+
+.box-menu a {
+    color: white;
+    padding-left: 30px;
+}
+
+header,
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 40px;
+    z-index: 2000;
+}
+
+.end {
+    margin-left: 380px;
+}
+
+header .boxs {
+    width: 100px;
+    height: 75px;
+    z-index: 4000;
+}
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background: url('https://wallpapercave.com/wp/wp10350465.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position-y: center;
+}
+
+h2{
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#save{
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    margin: 14px 50px;
+}
+
+#suaForm{
+    box-shadow: 2px 2px 5px #888888, -2px -2px 5px #888888;
+    margin-top: 30px;
+    padding: 18px 35px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    z-index: 100000;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+#suaForm:hover{
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-bottom: 9px;
+    width: 200px;
+    height: 20px;
+}
+select{
+    margin-bottom: 9px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 25px;
+    color: white;
+}
+
+select option{
+    color: black;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}

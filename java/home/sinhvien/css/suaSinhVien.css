@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('https://wallpapercave.com/wp/wp10350465.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+#editForm{
+    width: 330px;
+    background-color: black;
+    padding-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 5px #888888, -2px -2px 5px #888888;
+    transition: all 0.5s ease-in-out;
+}
+
+#editForm:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+#editForm input{
+    background-color: transparent;
+    width: 180px;
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#editForm input:focus{
+    outline: none;
+}
+
+#editForm input[type="file"]{
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+#editForm label{
+    margin-right: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button #submit{
+    width: 150px;
+    height: 30px;
+    border-bottom: none;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+select{
+    width: 180px;
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+select option{
+    color: black;
+}

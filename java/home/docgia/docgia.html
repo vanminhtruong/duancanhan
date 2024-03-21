@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./cssDocGia/docgia.css">
+    <link rel="stylesheet" href="./cssDocGia/docgia1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box-header">
+                <header>
+                    <div class="boxs"></div>
+                    <div class="tool"></div>
+                </header>
+
+                <div class="box-menu">
+                    <nav>
+                        <ul>
+
+                            <li>
+                                <a href="../home/index.php">Trang chủ</a>
+                            </li>
+
+                            <li>
+                                <a href="../docgia/docgia.html">Quản lý độc giả</a>
+                            </li>
+
+                            <li>
+                                <a href="../sinhvien/sinhvien.php">Thông tin sinh viên</a>
+                            </li>
+
+                            <li class="end">
+                                <a href="../sach/sach.php">Quản lý sách</a>
+                            </li>
+
+                            <li class="midde">
+                                <a href="../baocao/baocao.html">Báo cáo</a>
+                            </li>
+
+                            <li>
+                                <a href="../muontra/muontra.php">Quản lý mượn trả</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+
+                    <div class="tool2"></div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div id="slider-container">
+                    <div id="slider">
+                        <div class="slide" style="background-image: url('https://phanmemungdungvn.com/wp-content/uploads/2019/04/phan-mem-quan-ly-thu-vien-2.jpg');"></div>
+                        <div class="slide" style="background-image: url('https://designs.vn/wp-content/images/25-11-2015/Library_16.jpg');"></div>
+                        <div class="slide" style="background-image: url('https://cloudify.vn/wp-content/uploads/2022/01/quan-ly-thu-vien-1.jpg');"></div>
+                        <!-- Thêm nhiều slide khác nếu cần -->
+                    </div>
+                </div>
+
+
+                <div class="prev">
+                    <button id="prevBtn">Prev</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div class="box-content">
+                <div class="group-content">
+                    <div class="group-input">
+                        <h2>Danh sách độc giả</h2>
+
+                        <div class="group-select">
+                            <label for="search">Tìm kiếm:</label>
+                            <select id="search" name="search"></select>
+
+                            <button id="show">Show</button>
+                            <button id="card">Làm thẻ thư viện</button>
+                        </div>
+
+                        <table id="docgia-table" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Mã SV</th>
+                                    <th>Mã Sách</th>
+                                    <th>Tên Sách</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Họ Tên</th>
+                                    <th>Giới Tính</th>
+                                    <th>Ngày Mượn</th>
+                                    <th>Ngày Trả</th>
+                                    <th>Xử lý vi phạm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dữ liệu sẽ được hiển thị ở đây -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-footer">
+                <footer>
+                    <p>Email: your@email.com</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<!-- <script src="./oop/docgia.js"></script> -->
+<script src="./oop/docgia.js" type="module"></script>
+
+</html>

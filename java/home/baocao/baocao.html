@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/baocao.css">
+    <link rel="stylesheet" href="./css/baocao1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+        <div class="box-header">
+            <header>
+                <div class="boxs"></div>
+                <div class="tool"></div>
+            </header>
+
+            <div class="box-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../home/index.php">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="../docgia/docgia.html">Quản lý độc giả</a>
+                        </li>
+                        <li>
+                            <a href="../sinhvien/sinhvien.php">Thông tin sinh viên</a>
+                        </li>
+                        <li class="end">
+                            <a href="../sach/sach.php">Quản lý sách</a>
+                        </li>
+                        <li class="midde">
+                            <a href="../baocao/baocao.html">Báo cáo</a>
+                        </li>
+
+                        <li>
+                            <a href="../muontra/muontra.php">Quản lý mượn trả</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tool2"></div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div id="slider-container">
+                <div id="slider">
+                    <div class="slide" style="background-image: url('https://phanmemungdungvn.com/wp-content/uploads/2019/04/phan-mem-quan-ly-thu-vien-2.jpg');"></div>
+                    <div class="slide" style="background-image: url('https://designs.vn/wp-content/images/25-11-2015/Library_16.jpg');"></div>
+                    <div class="slide" style="background-image: url('https://cloudify.vn/wp-content/uploads/2022/01/quan-ly-thu-vien-1.jpg');"></div>
+                    <!-- Thêm nhiều slide khác nếu cần -->
+                </div>
+            </div>
+
+
+            <div class="prev">
+                <button id="prevBtn">Prev</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            
+
+            <div class="group-tabs">
+                <div class="tabs">
+                    <div class="tab-header">
+                        <div class="tab-item active" data-tab="tab1">Thống kê sách mượn</div>
+                        <div class="tab-item" data-tab="tab2">Mượn Quá Hạn</div>
+                        <div class="tab-item" data-tab="tab3">Thống Kê Vi Phạm</div>
+                        <div class="tab-item" data-tab="tab4">Thống kê Sách Chưa Mượn</div>
+                        <div class="tab-item" data-tab="tab5">Thống Kê Sinh Viên Làm Thẻ</div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                        <div class="group-baocao">
+                            <div class="group-table">
+                                <h1>Báo Cáo Mượn Sách</h1>
+                                <table id="bao-cao-table" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã phiếu mượn</th>
+                                            <th>Ngày mượn</th>
+                                            <th>Ngày trả</th>
+                                            <th>Số lượng</th>
+                                            <th>Tình trạng sách</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Dữ liệu sẽ được thêm vào đây từ jQuery AJAX -->
+                                    </tbody>
+                                </table>
+                                
+                                <div class="group-status">
+                                    <div id="count-status"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="group-baocao">
+                            <div class="group-table">
+                                <h1>Danh Sách Mượn Sách Quá Hạn</h1>
+                                <table id="qua-han-table" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã phiếu mượn</th>
+                                            <th>Ngày mượn</th>
+                                            <th>Ngày trả</th>
+                                            <th>Số lượng</th>
+                                            <th>Tình trạng sách</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Dữ liệu sẽ được thêm vào đây từ jQuery AJAX -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <div class="group-baocao">
+                            <div class="group-table">
+                                <h2>Danh sách vi phạm</h2>
+                                <table id="viPhamTable" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã Biên Bản</th>
+                                            <th>Mã Sinh Viên</th>
+                                            <th>Mã Sách</th>
+                                            <th>Lỗi Vi Phạm</th>
+                                            <th>Biện Pháp Xử Lý</th>
+                                            <th>Ngày</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                
+                                    </tbody>
+                                </table>
+                                <div id="totalBienBan"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <div class="group-baocao">
+                            <div class="group-table">
+                                <h1>Báo Cáo Sách Chưa Mượn</h1>
+                                <table id="SachChuaMuon" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã phiếu mượn</th>
+                                            <th>Ngày mượn</th>
+                                            <th>Ngày trả</th>
+                                            <th>Số lượng</th>
+                                            <th>Tình trạng sách</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Dữ liệu sẽ được thêm vào đây từ jQuery AJAX -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab5">
+                        <div class="group-baocao">
+                            <div class="group-table">
+                                <h1>Số Sinh Viên Làm Thẻ Thư Viện</h1>
+                                <table id="cardTable" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã Thẻ</th>
+                                            <th>Thời Gian Cấp</th>
+                                            <th>Hạn Sử Dụng</th>
+                                            <th>Mã Sinh Viên</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Dữ liệu sẽ được thêm vào đây bằng jQuery -->
+                                    </tbody>
+                                </table>
+                                
+                                <div id="totalMathe"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="box-footer">
+            <footer>
+                <p>Hello Footer@gmail.com</p>
+            </footer>
+        </div>
+      </div>
+  </div>
+
+    
+</body>
+<script src="./jsBaoCao/baocao.js" type="module"></script>
+</html>

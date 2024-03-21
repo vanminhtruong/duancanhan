@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+}   
+
+body::before{
+    content: "";
+    background-image: url('dark-sunset.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: absolute;
+    filter: blur(5px);
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    color: white;
+    /* z-index: 100000; */
+}
+
+.container .box{
+    width: 70%;
+    height: 350px;
+    position: relative;
+}
+.container .box::before{
+    content: "";
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    filter: blur(0.1px);
+    background-color: rgb(73, 69, 69);
+    opacity: 0.3;
+}
+
+.container .box::after{
+    content: "";
+    background-image: url('dark-sunset.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+.container form{
+    position: absolute;
+    z-index: 100000;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000;
+}
+
+.container form .group{
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 190px;
+}
+
+.container form .group:focus{
+    outline: none;
+}
+
+.container form label{
+    margin-right: 10px;
+}
+
+.container form .group::placeholder{
+    color: white;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button input{
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#masv{
+    background-color: transparent;
+    color: black;
+}
+
+#masv option{
+    background-color: transparent;
+}
+
+
+
+
+
