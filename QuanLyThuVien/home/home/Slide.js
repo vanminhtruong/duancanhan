@@ -18,7 +18,7 @@ class Slide {
         
             function redirectToLogin() {
                 // Chuyển hướng đến trang login.html
-                window.location.href = "http://localhost:8081/QuanLyThuVien/login/";
+                window.location.href = "../../login/";
                 // console.log("hello world")
             }
         
@@ -32,8 +32,6 @@ class Slide {
                         window.location.href = "http://localhost:8081/QuanLyThuVien/home/home/";
                         localStorage.removeItem("validatedCard");
                         localStorage.removeItem("isLogin");
-                        
-        
                     },
                     error: function() {
                         alert("An error occurred during the logout process.");

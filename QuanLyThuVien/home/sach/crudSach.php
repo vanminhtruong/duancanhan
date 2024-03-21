@@ -147,7 +147,7 @@ function xoaSach() {
     }
 
     // Xóa từ bảng sinhvien
-    $sql_delete_sach = "DELETE FROM sach WHERE masach = $masach";
+    $sql_delete_sach = "DELETE FROM sach WHERE masach = '$masach'";
     if ($conn->query($sql_delete_sach) === TRUE) {
         // Kết thúc giao dịch
         $conn->commit();
@@ -174,7 +174,7 @@ function suaSach() {
     $soluong = $_POST['soluong'];
 
     // SQL để cập nhật thông tin sách trong CSDL
-    $sql = "UPDATE sach SET tensach='$tensach', sotrang=$sotrang, gia=$gia, namxb=$namxb, tinhtrangsach='$tinhtrangsach', tentg='$tentg', tennxb='$tennxb', soluong=$soluong WHERE masach=$masach";
+    $sql = "UPDATE sach SET tensach='$tensach', sotrang='$sotrang', gia='$gia', namxb='$namxb', tinhtrangsach='$tinhtrangsach', tentg='$tentg', tennxb='$tennxb', soluong='$soluong' WHERE masach='$masach'";
 
     if ($conn->query($sql) === TRUE) {
         echo "Sửa sách thành công";

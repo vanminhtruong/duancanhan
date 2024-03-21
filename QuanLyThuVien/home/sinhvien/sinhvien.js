@@ -241,19 +241,3 @@
         window.location.href = "suaSinhvien.php?masv=" + masv + "&gioitinh=" + gioitinh;
         console.log("sinh viên của tôi: " + masv);
     })
-    // $("#sinhvienTable").on("click", ".delete-btn", function() {
-    //     // Lấy mã sinh viên từ dòng được chọn
-    //     var masv = $(this).closest("tr").find("td:first").text();
-    //     console.log("sinh " + masv);
-    //     // Gọi API để xóa sinh viên
-    //     $.ajax({
-    //         type: "DELETE",
-    //         url: "http://localhost:8081/QuanLyThuVien/home/sinhvien/crudSinhvien.php?masv=" + masv,
-    //         success: function(response) {
-    //             // console.log("res: "+JSON.stringify(response));
-    //             // // Sau khi xóa thành công, hiển thị lại danh sách sinh viên
-    //             // loadSinhvienData();
-    //         }
-    //     });
-
-    // });
